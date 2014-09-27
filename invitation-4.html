@@ -411,8 +411,9 @@ h6 a:visited {
 
 .panelNew {
   border-left:1px #e5e5e5 solid;
-  border-right:1px #e5e5e5 solid;
+  /*border-right:1px #e5e5e5 solid;*/
 }
+
 
 .panel {
   border:0 none;
@@ -592,6 +593,9 @@ table.round td {
 body.outlook p {
   display: inline !important;
 }
+
+
+
 
 /*  Media Queries */
 
@@ -825,10 +829,10 @@ body.outlook p {
 	}
 	
 	p.italic1{
-		font:normal 24px/25px Arial, sans-serif;
+		font:normal 24px/48px Arial, sans-serif;
 		color:#fff;
 		margin:0;
-		padding:16px 0 16px 20px;
+		padding:0 0 0 20px;
 	}
 	
 	p.italic1 a{
@@ -1036,6 +1040,10 @@ body.outlook p {
 	ul.fotlink li a:hover{
 		text-decoration:underline;
 	}
+	
+	.newpanBdr{
+		border-right:1px #e5e5e5 solid;
+	}
 	/*----My Style----*/
 
     @media only screen and (max-width: 600px) {
@@ -1053,7 +1061,7 @@ body.outlook p {
 	  p.italic1{
 		  font-size:13px;
 		  line-height:14px;
-		  padding-top:5px;
+		  padding-top:7px;
 		  padding-bottom:0;
 	  }
 	  
@@ -1065,11 +1073,21 @@ body.outlook p {
 	  a.viewMore{
 		  margin-bottom:15px;
 	  }
+	  
+	  .panelNew{
+		  border-top:1px #e5e5e5 solid;
+	  }
     }
 	
-	@media only screen and (max-width: 479px) {
+	@media only screen and (max-width: 480px) {
 		table[class="body"] .columns.six { width:300px !important;}
 	  table[class="body"] .columns.twelve { width:300px !important;}
+	   p.italic1{
+		  font-size:13px;
+		  line-height:14px;
+		  padding-top:7px;
+		  padding-bottom:0;
+	  }
 	}
 	
 	
@@ -1153,7 +1171,7 @@ body.outlook p {
                         </tr>
                       </table>
                     </td>
-                    <td class="wrapper nopadTop last">
+                    <td class="wrapper nopadTop last newpanBdr">
 
                       <table class="six columns panelNew">
                         <tr>
